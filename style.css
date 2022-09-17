@@ -1,3 +1,4 @@
+/* general settings */
 *{
     padding: 0;
     margin: 0;
@@ -21,3 +22,49 @@ body{
     background: var(--bg-color);
     color: var(--text-color);
 }
+/* End of general settings */
+
+
+/* header styling  navbar*/
+header {
+    position: fixed;
+    width: 100%;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 111;
+    padding: 20px 320px;
+    background-color: var(--bg-color);
+    box-shadow: rgba(33,35,38,0.1) 0px 10px 10px -10px;
+}
+
+.logo{
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.navlist{
+    display: flex;
+}
+
+.navlist a{
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 15px 20px;
+    transition: color .4s;
+}
+
+.navlist a:hover{
+    color: var(--main-color);   
+}
+
+#menu-icon{
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+/* end of header styling  navbar*/
