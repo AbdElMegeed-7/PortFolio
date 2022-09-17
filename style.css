@@ -36,7 +36,7 @@ header {
     justify-content: space-between;
     z-index: 111;
     padding: 20px 320px;
-    background-color: var(--bg-color);
+    background: var(--bg-color);
     box-shadow: rgba(33,35,38,0.1) 0px 10px 10px -10px;
 }
 
@@ -68,3 +68,67 @@ header {
     display: none;
 }
 /* end of header styling  navbar*/
+
+
+/* Home section */
+
+section{
+    padding: 75px 16.7%;
+}
+
+.home{
+    width: 100%;
+    min-height: 95vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5rem;
+    align-items: center;
+}
+
+.home-img img{
+    max-width: 100%;
+    width: 530px;
+    height: auto;
+}
+
+.home-text h5{
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: var(--main-color);
+}
+
+.home-text h1{
+    font-size: var(--bg-font);
+    color: var(--text-color);
+    line-height: 1.4;
+    margin-bottom: 25px;
+}
+
+.home-text p {
+    max-width: 100%;
+    width: 430px;
+    font-size: var(--p-font);
+    color: #717173;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    background: var(--main-color);
+    border-radius: 5rem;
+}
+
+.btn i{
+    margin-right: 10px;
+}
+
+.btn:hover{
+    transform: scale(1.2);
+    background: #f37465;
+    transition: .4s;
+    box-shadow: 0 5px 15px 2px rgb(63 63 44 / 18%);
+}
